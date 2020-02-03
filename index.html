@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Film List App</title>
+    <script
+      src="https://kit.fontawesome.com/e75e805202.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/sandstone/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="fas fa-film text-primary"></i>
+        My<span class="text-primary">Film</span>List
+      </h1>
+      <form id="film-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="director">Director</label>
+          <input type="text" id="director" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input type="text" id="year" class="form-control" />
+        </div>
+        <input
+          type="submit"
+          value="Add Film"
+          class="btn btn-primary btn-block"
+        />
+      </form>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Year</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="film-list"></tbody>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
